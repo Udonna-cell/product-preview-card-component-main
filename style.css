@@ -93,6 +93,9 @@ button > img {
 
 @media only screen and (min-width: 1024px) {
   /* Your desktop styles go here */
+  button {
+    cursor: pointer;
+  }
   img.desktop {
     display: block;
   }
@@ -105,11 +108,17 @@ button > img {
   }
   section.card {
     display: grid;
-    width: calc(320px * 1.7);
+    width: calc(320px * 1.8);
     grid-template-columns: 1.5fr 1.2fr;
   }
   article {
     justify-content: center;
     /* align-items: center; */
+  }
+  article h1, p.price {
+    font-size: xx-large;
+  }
+  article > p {
+    width: calc(295px / 1.3);
   }
 }
